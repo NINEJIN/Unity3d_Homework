@@ -1,2 +1,2 @@
-# Unity3d_homework1
-Homework 1
+# Unity3d_homework
+Homework
