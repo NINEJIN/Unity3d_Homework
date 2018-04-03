@@ -107,7 +107,7 @@ Homework 2
   ```  
   效果如图    
 
-  ![太阳系演示效果图](https://images-cdn.shimo.im/XvH2xvLe7C8Tt3ct/image.png!thumbnail)
+  ![太阳系演示效果图](https://images-cdn.shimo.im/eamcTOP5OYcwhdj1/image.png!thumbnail)
 
 
 
