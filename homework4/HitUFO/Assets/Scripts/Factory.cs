@@ -23,7 +23,7 @@ namespace HitUFO {
         public int getUfoId()
         {
             for (int i = 0; i < ufoList.Count; i++)
-                if (!ufoList[i].activeInHierarchy)   // 另有activeInHierarchy
+                if (!ufoList[i].activeInHierarchy)   
                     return i;
 
             // 若队列没有空闲的飞碟的话，新增一个ufo实例

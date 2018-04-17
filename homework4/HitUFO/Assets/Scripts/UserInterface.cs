@@ -45,21 +45,17 @@ public class UserInterface : MonoBehaviour {
         Round.text = "Round : " + state.getRound().ToString();
         Score.text = "Score : " + state.getScore().ToString();
 
+        // 进入下一回合的时候显示提示
         if (roundHint != state.getRound())
         {
             roundHint = state.getRound();
             Countdown.text = "ROUND " + roundHint.ToString() + " !";
         }
 
-        if (state.isCounting())
-        {
-            Countdown.text = ((int)state.getCountdown()).ToString();
-            return;
-        }
+        // 按下空格键开始发射飞盘
         if (Input.GetKeyDown("space"))
-        {
             user.throwUfo();
-        }
+        
             
         if (state.isShooting())
         {
@@ -72,14 +68,14 @@ public class UserInterface : MonoBehaviour {
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
 
-                // 子弹
+                // 设置子弹的位置、发射
                 bullet.GetComponent<Rigidbody>().velocity = Vector3.zero;
                 bullet.transform.position = this.transform.position;
                 bullet.GetComponent<Rigidbody>().AddForce(ray.direction * speed, ForceMode.Impulse);
 
                 // 光线投射，投射一条射线并返回所有碰撞，返回一个RaycastHit[]结构体out， 若out中包括"ufo"
+                // 若击中ufo，则回收它
                 if (Physics.Raycast(ray, out hit) && hit.collider.gameObject.tag == "ufo")
-                    // 击中则回收
                     hit.collider.gameObject.SetActive(false);
                           
             }

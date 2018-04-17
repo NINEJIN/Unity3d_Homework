@@ -12,11 +12,9 @@ namespace HitUFO
 
     public interface GameState
     {
-        bool isCounting();
         bool isShooting();
         int getRound();
         int getScore();
-        int getCountdown();
         void toNextRound();
         void setScore(int o);
     }
@@ -26,7 +24,7 @@ namespace HitUFO
     {
         private static SceneController instance;
         private RoundController basecode;
-        private Model model;
+        private Manager manager;
 
         private int round = 0;
         private int score;
@@ -37,8 +35,8 @@ namespace HitUFO
             return instance;
         }
 
-        public void setModel(Model obj) { model = obj; }
-        internal Model getModel() { return model; }
+        public void setManager (Manager obj) { manager = obj; }
+        internal Manager getManager() { return manager; }
 
         public void setRoundController(RoundController obj) { basecode = obj; }
         internal RoundController getRoundController() { return basecode; }
@@ -46,14 +44,12 @@ namespace HitUFO
 
         public void throwUfo()
         {
-            model.Ready();
+            manager.Ready();
         }
-
-        public bool isCounting() { return model.isCounting(); }
-        public bool isShooting() { return model.isShooting(); }
+        
+        public bool isShooting() { return manager.isShooting(); }
         public int getRound() { return round; }
         public int getScore() { return score; }
-        public int getCountdown() { return (int)model.timer + 1; }
 
 
         public void setScore(int i) { score = i; }
@@ -79,10 +75,11 @@ public class RoundController : MonoBehaviour {
 
     public void loadUfo(int round)
     {
+        // 随机生成颜色
         float r = Random.Range(0f, 1f);
         float g = Random.Range(0f, 1f);
         float b = Random.Range(0f, 1f);
         color = new Color(r, g, b);
-        SceneController.getInstance().getModel().setting(1, color, pos, speed, round);
+        SceneController.getInstance().getManager().setting(1, color, pos, speed, round);
     }
 }
