@@ -123,14 +123,14 @@ void Update () {
                                     parPos[i].radius * Mathf.Sin(radian), 
                                     0f);
 ```
-这时的运行效果是这样的。
+这时的运行效果是这样的。  
 ![光环2][6]
 
 **Step 8. 调整光环效果（加特效）**
 上面的效果图中，粒子效果还没达到预想中的酷炫。为了加强粒子效果，这里我使用了Glow11插件（如要使用此插件，自行上网下载，或在我github里也可以找到Glow11.unitypackage）。点击Assets-Import Package-Custom Package，选择Glow11即可导入。  
 然后给Main Camera添加Glow11组件（Glow11的效果是通过摄像机实现的），粒子的素材依然为Default-Material。这时粒子只是变得明亮了，要想获得更好的效果，调整摄像机的Glow11组件，选择高精度High Percision，boost strength调成3，增强粒子效果。  
 ![调整Glow11][7]
-这时再看运行效果，大功告成！！（好好看啊哈哈哈）
+这时再看运行效果，大功告成！！（好好看啊哈哈哈）  
 ![最终Halo][8]
 
 
