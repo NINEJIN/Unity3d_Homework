@@ -139,6 +139,6 @@ void Update () {
   [3]: https://images-cdn.shimo.im/0cA5dG6mfLUSmnm6/image.png!thumbnail
   [4]: https://images-cdn.shimo.im/LUsupjXDbn8vIzoP/image.png!thumbnail
   [5]: https://images-cdn.shimo.im/mYCclF9iECkR2viG/Halo1.gif
-  [6]: https://images-cdn.shimo.im/lLI8cUHaoXMIa32K/Halo2.gif
+  [6]: https://images-cdn.shimo.im/VlBoHfzWpywee8bX/Halo2.gif
   [7]: https://images-cdn.shimo.im/HNYy511NyFwdCTLq/image.png!thumbnail
-  [8]: https://images-cdn.shimo.im/hbR64aaTid8kmXVt/Halo.gif
+  [8]: https://images-cdn.shimo.im/YJlvU4mZXDUbYgGW/HaloFinal.gif
