@@ -9,7 +9,7 @@
 ![添加粒子系统组件][2]
 
 **Step 2. 添加素材**  
-为了弄出星空中黑洞的效果，我们先把背景变黑，打开Window-Lighting-Settings，在Scene窗口下将Skybox Material设置为Default-Material即可。另外，我们还要将粒子效果设置为白色发光粒子，在粒子系统组件下的Renderer部分可以设置素材为Default-Material。
+为了弄出星空中黑洞的效果，我们先把背景变黑，打开Window-Lighting-Settings，在Scene窗口下将Skybox Material设置为Default-Material即可。另外，我们还要将粒子效果设置为白色发光粒子，在粒子系统组件下的Renderer部分可以设置素材为Default-Material。  
 ![背景设置][3]
 
 **Step 3. 新建脚本**  
