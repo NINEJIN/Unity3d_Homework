@@ -131,7 +131,7 @@ void Update () {
 然后给Main Camera添加Glow11组件（Glow11的效果是通过摄像机实现的），粒子的素材依然为Default-Material。这时粒子只是变得明亮了，要想获得更好的效果，调整摄像机的Glow11组件，选择高精度High Percision，boost strength调成3，增强粒子效果。  
 ![调整Glow11][7]  
 
-这时再看运行效果，大功告成！！（好好看啊哈哈哈）  
+这时再看运行效果，大功告成！！（好看hhh）  
 ![最终Halo][8]
 
 
