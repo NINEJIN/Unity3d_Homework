@@ -118,7 +118,7 @@ void Update () {
                             0f);
                             
     //......
-    // 同理，更新未知的时候亦是
+    // 同理，更新位置的时候亦是
     parArr[i].position = new Vector3(parPos[i].radius * Mathf.Cos(radian), 
                                     parPos[i].radius * Mathf.Sin(radian), 
                                     0f);
