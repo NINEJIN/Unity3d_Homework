@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: e9c6927ab94412d4ea0db3afcad070af
+timeCreated: 1484096986
+licenseType: Pro
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - LeftTop: {instanceID: 0}
+  - RightTop: {instanceID: 0}
+  - LeftBottom: {instanceID: 0}
+  - RightBottom: {instanceID: 0}
+  - cam: {instanceID: 0}
+  - white: {fileID: 2800000, guid: 95337a7f9a7cde347ac8e49a4648925d, type: 3}
+  - black: {fileID: 2800000, guid: d59023370c9639b4784641097d164e84, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
